@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/validacion.js"></script>
+    <title>Ejercicio10</title>
+</head>
+<body>
+
+    <div id="formularioContacto">
+
+        <form id="formC"  onsubmit=" return validarFormulario()">
+            <h2 id="tituloContacto">Formulario de Contacto</h2>
+            <fieldset>
+
+        <div id="dentro">  
+            
+            <label for="ape">Apellido</label>
+            <br>
+                
+            <input type="text" name="Apellido" id="apellido" placeholder="Apellido" size="30px"><span class="spa" id="sApe"></span><br>
+            <label for="nom">Nombre</label><br>
+                
+            <input type="text" name="Nombre" id="nombre" placeholder="Nombre" size="30px"><span class="spa" id="sNom"></span>
+                <br>
+                <label for="sex">Sexo</label>
+                <br>
+                
+            <select name="Sexo" id="sexo">
+                <option value="Masculino" >Masculino</option>
+                <option value="Femenino">Femenino</option>
+                <option value="Otro">Otro</option>
+            </select>
+            <br>
+
+            <label for="fechN">Fecha Nacimiento</label><br>
+                <span class="spa" id="sfech"></span>
+            <input type="date" name="fechaNac" id="fechNac" size="30px"><br>
+                <label for="em" >E-mail</label><br>
+            <input type="email" name="email" id="em" placeholder="e-mail" size="30px">
+
+            <input type="submit" value="Enviar" name="fdatos">
+
+        </div>  
+
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
